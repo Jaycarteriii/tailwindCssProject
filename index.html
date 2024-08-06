@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white p-4 flex justify-between items-center top-0 sticky">
+        <div class="text-2xl">Jay Carter III</div>
+        <nav class="space-x-4">
+            <a href="#home" class="hover:underline">Home</a>
+            <a href="#projects" class="hover:underline">Projects</a>
+            <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center"
+        style="background:linear-gradient(90deg , rgba(0, 0, 0, 0.255), rgba(200, 200, 200, 0.261)), url('./img/WhatsApp\ Image\ 2024-08-05\ at\ 15.42.58.jpeg') no-repeat; background-position: 60% 20%;">
+        <div class="text-center text-white">
+            <h1 class="text-5xl font-bold mb-4">Welcome to Jay Carter's Portfolio</h1>
+            <p class="text-xl">I am a Web Developer</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+            <div class="flex flex-wrap justify-center space-x-4">
+                <div class="p-4 bg-white rounded shadow-md">
+                    <h3 class="text-xl font-semibold">HTML</h3>
+                </div>
+                <div class="p-4 bg-white rounded shadow-md">
+                    <h3 class="text-xl font-semibold">CSS</h3>
+                </div>
+                <div class="p-4 bg-white rounded shadow-md">
+                    <h3 class="text-xl font-semibold">JavaScript</h3>
+                </div>
+                <div class="p-4 bg-white rounded shadow-md">
+                    <h3 class="text-xl font-semibold">React</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-2 rounded shadow-md">
+                    <img src="./img/project1.jpeg" alt="Project 1" class="rounded mb-4 w-full">
+                    <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                    <!-- <p class="text-gray-600">Brief description of the project.</p> -->
+                </div>
+                <div class="bg-white p-2 rounded shadow-md">
+                    <img src="./img/project2.jpeg" alt="Project 2" class="rounded mb-4 w-full">
+                    <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                    <!-- <p class="text-gray-600">Brief description of the project.</p> -->
+                </div>
+                <div class="bg-white p-2 rounded shadow-md">
+                    <img src="./img/project3.jpeg" alt="Project 3" class="rounded mb-4 w-full">
+                    <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+                    <!-- <p class="text-gray-600">Brief description of the project.</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+            <form class="max-w-xl mx-auto bg-white p-8 rounded shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name:</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded mt-1">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email:</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded mt-1">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message:</label>
+                    <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded mt-1"
+                        rows="4"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>&copy; 2024 Jay Carter III. All rights reserved.</div>
+            <div class="space-x-4">
+                <a href="#" class="hover:text-gray-400">Facebook</a>
+                <a href="#" class="hover:text-gray-400">LinkedIn</a>
+                <a href="https://github.com/dashboard" class="hover:text-gray-400">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
